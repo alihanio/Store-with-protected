@@ -43,14 +43,14 @@ const SignIn = () => {
       <StyledForm onSubmit={handleSubmit}>
         <h2>Sign In</h2>
 
-        <StyledInput
+        <Input
           name="username"
           placeholder="Name"
           onChange={handleChange}
           value={values.username}
         />
 
-        <StyledInput
+        <Input
           name="password"
           placeholder="Password"
           onChange={handleChange}
@@ -102,10 +102,3 @@ const StyledButton = styled(Button)({
   },
 });
 
-const StyledInput = styled(Input)({
-  width: "100%",
-  height: "2rem",
-  backgroundColor: "white",
-  padding: "0.1rem 2rem",
-  border: "1px solid black"
-});

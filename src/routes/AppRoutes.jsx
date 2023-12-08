@@ -8,14 +8,10 @@ import MobileStore from "../components/mobileStore/MobileStore";
 const AppRoutes = () => {
   const { isAuth } = useSelector((state) => state.signIn);
 
-  console.log(isAuth);
-
   return (
     <Routes>
       <Route path="/" element={<MobileStore/>} />
-
       <Route path="/signIn" element={<SignIn />} />
-
       <Route
         path="/profile"
         element={

@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getMobileData } from "../../store/slices/mobileStore-slice";
 import Header from "../layout/Header";
 import MobileList from "./MobileList";
+import { styled } from "@mui/material";
+
 const MobileStore = () => {
   const { mobiles, status } = useSelector((state) => state.mobileStore);
   const dispatch = useDispatch();
@@ -12,7 +14,7 @@ const MobileStore = () => {
 
   return (
     <>
-      {status === "loading" ? <p>loading</p> : ""}
+      {status === "loading" ? <StyledLoading>loading...</StyledLoading> : ""}
       <Header />
       <MobileList mobiles={mobiles} />
     </>
@@ -20,3 +22,10 @@ const MobileStore = () => {
 };
 
 export default MobileStore;
+
+const StyledLoading = styled("p")({
+  fontSize: "2rem",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+});
