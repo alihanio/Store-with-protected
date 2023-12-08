@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Store-with-protected/static/css/main.cb1897e1.css",
+    "main.js": "/Store-with-protected/static/js/main.d1100b06.js",
+    "index.html": "/Store-with-protected/index.html",
+    "main.cb1897e1.css.map": "/Store-with-protected/static/css/main.cb1897e1.css.map",
+    "main.d1100b06.js.map": "/Store-with-protected/static/js/main.d1100b06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb1897e1.css",
+    "static/js/main.d1100b06.js"
+  ]
+}
